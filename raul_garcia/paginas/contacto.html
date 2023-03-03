@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+   <link rel="stylesheet" href="contacto.css">
+   <link rel="icon" type="image/x-icon" href="../imagenes/Avion.png">
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Contacto</title>
+</head>
+
+<body>
+   <h1>LMDTravel</h1>
+   <br>
+   <nav class="menu">
+      <ul>
+      <li><a href="../index.html">Volver a inicio</a></li>
+      <li><a href="../paginas/tokio.html">Tokyo</a></li>
+      <li><a href="../paginas/okinawa.html">Okinawa</a></li>
+      <li><a href="../paginas/sapporo.html">Sapporo</a></li>
+      </ul>
+   </nav>
+   <br>
+
+
+
+   <h3>Inicio de sesion</h3>
+
+   <form action="/action_page.php">
+      <fieldset>
+         <legend>Inicio de sesion:</legend>
+         <label for="name">Usuario:</label>
+         <input type="text" id="name" name="name" required autofocus><br><br>
+         <label for="pass">Contreseña:</label>
+         <input type="password" id="pass" name="pass" required autofocus><br><br>
+         <input type="checkbox" id="recordar" name="recordar" checked autofocus>
+         <label for="recordar">Recordar mi contraseña</label>
+         <br><br>
+
+         <input type="submit" value="Enviar">
+      </fieldset>
+   </form>
+   <br>
+   <br>
+   <h3>Registrate</h3>
+
+   <form action="/action_page.php">
+      <fieldset>
+         <legend>Registro:</legend>
+         <label for="usuario">Usuario:</label>
+         <input type="text" id="usuario" name="usuario" required autofocus><br><br>
+         <label for="word">Contraseña:</label>
+         <input type="password" id="word" name="word" required autofocus><br><br>
+         <label for="email">Email:</label>
+         <input type="email" id="email" name="email" requiered autofocus><br><br>
+         <label for="birthday">Fecha de Cumpleaños:</label>
+         <input type="date" id="birthday" name="birthday" required><br><br>
+         <fieldset>
+            <legend>Que ciudad le interesa mas</legend>
+            <input type="radio" id="tk" name="ciudad" value="tk">
+            <label for="tk">Tokio</label>
+            <br>
+            <input type="radio" id="ok" name="ciudad" value="ok">
+            <label for="ok">Okinawa</label>
+            <br>
+            <input type="radio" id="so" name="ciudad" value="so">
+            <label for="so">Soppano</label>
+
+         </fieldset>
+         <br>
+         <label for="tempo">Cuanto tiempo piensas quedarte</label>
+         <br>
+         <select name="tempo" id="tempo">
+            <option value="15d">1-5 dias</option>
+            <option value="12s">1-2 semanas</option>
+            <option value="1m">Un mes</option>
+         </select>
+         <br><br>
+         <input type="submit" value="Enviar">
+      </fieldset>
+      <p hidden>Tokio es la mejor ciudad sin dudas</p>
+   </form>
+   <br>
+   <footer>
+      <center>
+         <h3>Tfno de contacto: 900 921 335<br>
+            <a href="informacion@LMDTravel.com">informacion@LMDTravel.com</a>
+         </h3>
+      </center>
+   </footer>
+</body>
+
+</html>
